@@ -25,9 +25,7 @@ defmodule CampCleanup do
     set1 = MapSet.new(range_from_tuple(range1))
     set2 = MapSet.new(range_from_tuple(range2))
 
-    intersect = MapSet.intersection(set1, set2)
-
-    intersect == set1 or intersect == set2
+    MapSet.subset?(set1, set2) or MapSet.subset?(set2, set1)
   end
 
   # Part two
