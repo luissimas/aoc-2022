@@ -64,5 +64,3 @@ defmodule RucksackReorganization do
     |> Enum.map(&priorities_map[&1])
   end
 end
-
-# RucksackReorganization.solve("./lib/day3/input.txt")
